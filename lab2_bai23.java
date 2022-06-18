@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.Math;
 
-public class lab2_bai21 {
+public class lab2_bai23 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
@@ -9,7 +9,7 @@ public class lab2_bai21 {
         int a = scan.nextInt();
        double result=0;
         for (int i=1 ; i<=a ;i+=1) {
-        	result=result+Math.pow(i, -1);
+        	result += 1*1.0f/ (2*i+1);
 
         }
     	System.out.print(result);
