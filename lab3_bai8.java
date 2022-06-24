@@ -80,6 +80,16 @@ static void xuatvitrichan_caui(float [] arr){
 
       Scanner scan = new Scanner(System.in);
       System.out.print("nhap ten bai toan: ");
+      System.out.println("nhap mang: ");
+      System.out.println("xuat mang: ");
+      System.out.println("xuat vi tri am: ");
+      System.out.println("xuat vi tri chan: ");
+      System.out.println("tim gia tri lon nhat: ");
+      System.out.println("tim gia tri duong dau: ");
+      System.out.println("tim so chan cuoi cung: ");
+      System.out.println("tim gia tri nho nhat: ");
+      System.out.println("xuat vi tri chan: ");
+
       int num = scan.nextInt();
       switch(num){
         case 1: nhapmang(arr, min, max);
