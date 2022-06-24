@@ -77,10 +77,9 @@ static void xuatvitrichan_caui(float [] arr){
       int int_random = rand.nextInt(upperbound);     
       // allocating memory for 5 integers.
       arr = new float[int_random];
-
+      nhapmang(arr, min, max);
       Scanner scan = new Scanner(System.in);
       System.out.print("nhap ten bai toan: ");
-      System.out.println("nhap mang: ");
       System.out.println("xuat mang: ");
       System.out.println("xuat vi tri am: ");
       System.out.println("xuat vi tri chan: ");
@@ -92,20 +91,15 @@ static void xuatvitrichan_caui(float [] arr){
 
       int num = scan.nextInt();
       switch(num){
-        case 1: nhapmang(arr, min, max);
-        case 2: xuatmang(arr);
-        case 3: xuatvitriam(arr);
-        case 4: xuatvitrichan(arr);
-        case 5: timgiatrilonhat(arr);
-        case 6: timgiatriduongdau(arr);
-        case 7: timsochancuoicung(arr);
-        case 8: timgiatrinhonhat(arr);
-        case 9: xuatvitrichan_caui(arr);
-
-      }
-
-          
-           
+        case 1: xuatmang(arr); break;
+        case 2: xuatvitriam(arr);break;
+        case 3: xuatvitrichan(arr);break;
+        case 4: timgiatrilonhat(arr);break;
+        case 5: timgiatriduongdau(arr);break;
+        case 6: timsochancuoicung(arr);break;
+        case 7: timgiatrinhonhat(arr);break;
+        case 8: xuatvitrichan_caui(arr);break;
+      }                 
     }
 }
 
