@@ -1,28 +1,28 @@
 import java.util.Random;
 import java.util.Scanner;
 public class lab3_bai8 {
-    static void nhapmang(float [] arr, float min ,float max){ 
+    static void nhapmang(float [] arr, float min ,float max){
         Random rd = new Random(); // creating Random object
         for (int i = 0; i < arr.length; i++) {
         arr[i] = min + (max-min)*rd.nextFloat();}
 
     }
 
-    static void xuatmang(float [] arr){ 
+    static void xuatmang(float [] arr){
       for (int i = 0; i < arr.length; i++)
-        {System.out.println("gia tri tai vi tri " + i + 
-                                   " : "+ arr[i]);  }       
+        {System.out.println("gia tri tai vi tri " + i +
+                                   " : "+ arr[i]);  }
  }
 
- static void xuatvitriam(float [] arr){ 
+ static void xuatvitriam(float [] arr){
     for (int i = 0; i < arr.length; i++)
         {if(arr[i]<0){System.out.println("gia tri tai vi tri " + i + " : "+ arr[i] +"la gia tri am");}}
-              
+
 }
-static void xuatvitrichan(float [] arr){ 
+static void xuatvitrichan(float [] arr){
     for (int i = 0; i < arr.length; i++)
         {if(arr[i]%2 == 0){System.out.println("gia tri tai vi tri " + i + " : "+ arr[i] +"la gia tri chan");}}
-              
+
 }
 static void timgiatrilonhat(float [] arr){
     float max=-100 ;
@@ -30,7 +30,7 @@ static void timgiatrilonhat(float [] arr){
         {if(arr[i] > max){ max = arr[i]; }}
 
     System.out.println("gia tri lon nhat la " +  max);
-              
+
 }
 //cau f
 static void timgiatriduongdau(float [] arr){
@@ -38,14 +38,14 @@ static void timgiatriduongdau(float [] arr){
     for (int i = 0; i < arr.length; i++)
         {if(arr[i] > 0){ duongdau = arr[i]; break; }}
     System.out.println("gia tri lon nhat la " +  duongdau);
-              
+
 }
 //cau g
 static void timsochancuoicung(float [] arr){
     float chancuoi=-1 ;
     for (int i = arr.length-1; i >=0; i--)
         {if(arr[i] %2 == 0){ chancuoi = arr[i]; break; }}
-    System.out.println("gia tri lon nhat la " +  chancuoi);              
+    System.out.println("gia tri lon nhat la " +  chancuoi);
 }
 
 static void timgiatrinhonhat(float [] arr){
@@ -55,16 +55,16 @@ static void timgiatrinhonhat(float [] arr){
         {if(arr[i] < min){ min = arr[i]; pos=i; }}
 
     System.out.println("gia tri nho nhat la " +  min + " vi tri cua no la: "+ pos);
-              
+
 }
-static void xuatvitrichan_caui(float [] arr){ 
+static void xuatvitrichan_caui(float [] arr){
     for (int i = 0; i < arr.length; i++)
         {if(  ((int)arr[i])%2 == 0){System.out.println("gia tri tai vi tri " + i + " : "+ arr[i] +"la gia tri chan");}}
-              
+
 }
 
-    public static void main (String[] args) 
-    {         
+    public static void main (String[] args)
+    {
 
       // declares an Array of integers.
       float[] arr;
@@ -74,7 +74,7 @@ static void xuatvitrichan_caui(float [] arr){
       Random rand = new Random(); //instance of random class
       int upperbound = 25;
         //generate random values from 0-24
-      int int_random = rand.nextInt(upperbound);     
+      int int_random = rand.nextInt(upperbound);
       // allocating memory for 5 integers.
       arr = new float[int_random];
       nhapmang(arr, min, max);
@@ -99,7 +99,6 @@ static void xuatvitrichan_caui(float [] arr){
         case 6: timsochancuoicung(arr);break;
         case 7: timgiatrinhonhat(arr);break;
         case 8: xuatvitrichan_caui(arr);break;
-      }                 
+      }
     }
 }
-
