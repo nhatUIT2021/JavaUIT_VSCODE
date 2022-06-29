@@ -1,7 +1,7 @@
 import java.lang.Math;
 
 public class duongtron {
-    toado a=new toado();
+    toado a= new toado();
     float r;
     public duongtron(){
         this.a.a=0;
@@ -36,4 +36,21 @@ public class duongtron {
         a.xuat();
         a.kiemtragiaonhau(b);
     }
+<<<<<<< HEAD
+=======
+
+    public void tinhchuvi(){
+        System.out.println(r*2*3.14);
+    }
+    public void tinhdientich(){
+        System.out.println(r*r*3.14);
+    }
+    public static void main(String[] args){
+        duongtron a =new duongtron(0, 0, 5);
+        a.tinhchuvi();
+        a.tinhdientich();
+
+    }
+
+>>>>>>> aac59c7 (test)
 }
