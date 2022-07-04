@@ -11,6 +11,7 @@ public class nhanvien {
     public void setluongcb(int x) {
         luongcb = x;
     }
+    public void xuat(){}
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("nhap vao so nhan vien: ");
@@ -64,12 +65,29 @@ public class nhanvien {
             }
         }
         int luongmax =0;
+        
         for (nhanvien a : danhsach_nhanvien){
             if (a.luong>luongmax){
                 luongmax=a.luong;
             }
         }
+        int luongmin=luongmax;
+        for (nhanvien a : danhsach_nhanvien){
+            if (a.luong<luongmin){
+                luongmin=a.luong;
+            }
+        }
+        
+        for (nhanvien a : danhsach_nhanvien){
+            a.xuat();
+        }
 
-        System.out.println(luongmax);
+        System.out.print("nhap vao ma nhan vien: ");
+        int manv = scan.nextInt();
+        for (nhanvien a : danhsach_nhanvien){
+            if(a.id==manv)
+            a.xuat();
+        }
+        //System.out.println(luongmax);
     }
 }

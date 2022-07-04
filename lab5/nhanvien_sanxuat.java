@@ -16,6 +16,13 @@ public class nhanvien_sanxuat extends nhanvien {
         luong = sosanpham * 170000 + luongcb;
     }
 
+    public void xuat(){
+        System.out.println("nhan vien van phong ID: "+id);
+        System.out.println("nhan vien van phong ho ten: "+hoten);
+        System.out.println("nhan vien van phong so ngay cong: "+sosanpham);
+        System.out.println("nhan vien van phong luong: "+luong);
+    }
+
     public static void main(String[] args) {
         
     }
