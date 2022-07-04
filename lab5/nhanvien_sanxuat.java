@@ -1,20 +1,22 @@
 package lab5;
 
 public class nhanvien_sanxuat extends nhanvien {
-    int sosanpham super.luongcb=5400000;
+    int sosanpham ;
 
-    public nhanvien_sanxuat(int x) {
-        sosanpham = x;
+    public nhanvien_sanxuat(){}
+
+    public nhanvien_sanxuat(int a, String b, int x) {
+        this.id= a;
+        this.hoten=b;
+        this.sosanpham = x;
     }
 
     public void tinhluong() {
-        this.setluongcb(5400000);
+        this.setluongcb(5300000);
         luong = sosanpham * 170000 + luongcb;
     }
 
     public static void main(String[] args) {
-        nhanvien_sanxuat a = new nhanvien_sanxuat(100);
-        a.tinhluong();
-        System.out.println(a.luong);
+        
     }
 }
